@@ -5,16 +5,17 @@ function App() {
 const [open, setOpen] = useState(true);
 
 
-const Menus= [
-  {title: 'Dashboard', icon: '/src/assets/DashboardIcon.png'},
-  {title: 'Users', icon: '/src/assets/UsersIcon.png'},
-  {title: 'Products', icon: '/src/assets/ProductsIcon.png', gap: true},
-  {title: 'Orders', icon: '/src/assets/OrdersIcon.png'},
-  {title: 'Invoices', icon: '/src/assets/InvoicesIcon.png'},
-  {title: 'Messages', icon: '/src/assets/MessagesIcon.png'},
-  {title: 'Analytics', icon: '/src/assets/AnalyticsIcon.png', gap: true},
-  {title: 'Settings', icon: '/src/assets/SettingsIcon.png'},
+  const Menus= [
+    {title: 'Dashboard', icon: '/src/assets/DashboardIcon.png'},
+    {title: 'Users', icon: '/src/assets/UsersIcon.png'},
+    {title: 'Products', icon: '/src/assets/ProductsIcon.png', gap: true},
+    {title: 'Orders', icon: '/src/assets/OrdersIcon.png'},
+    {title: 'Invoices', icon: '/src/assets/InvoicesIcon.png'},
+    {title: 'Messages', icon: '/src/assets/MessagesIcon.png'},
+    {title: 'Analytics', icon: '/src/assets/AnalyticsIcon.png', gap: true},
+    {title: 'Settings', icon: '/src/assets/SettingsIcon.png'},
 ]
+
   return (
     <div className='flex'>
         <div 
@@ -35,7 +36,7 @@ const Menus= [
         
         <ul className='pt-6'>
           {Menus.map((menu, index)=> (
-            <li key={index} className={`text-sm duration-300 flex items-center gap-x-4 text-gray-300 text-sm
+            <li key={index} className={`text-sm duration-300 flex items-center gap-x-4 text-gray-300
               p-2 hover:text-white hover:bg-light-white border-2 border-transparent
               ${menu.gap ? "mt-9" : "mt-2"}
               `}
